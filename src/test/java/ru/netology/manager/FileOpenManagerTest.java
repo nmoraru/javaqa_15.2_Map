@@ -69,7 +69,7 @@ class FileOpenManagerTest {
         manager.addApp(html, google);
         manager.addApp(xls, excel);
         manager.addApp(jpeg, imageViewer);
-        List<String> expected = new ArrayList<>(List.of(google, excel, imageViewer));
+        List<String> expected = new ArrayList<>(List.of(google, imageViewer, excel));
         List<String> actual = manager.getAllValues();
         assertEquals(expected, actual);
     }
